@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 // Test suite
-describe('Regression test suite', function(){
+describe('Login logout', function(){
     
     // Test case
     it('Start the system', function (){
