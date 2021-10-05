@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
 
 // Test suite
-describe('Create a room', function(){
+describe('Edit room', function(){
     
     // Test case
     it('Start the system', function (){
