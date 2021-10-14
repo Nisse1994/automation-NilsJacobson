@@ -6,7 +6,7 @@ import * as billsPagefunctions from '../pages/billsPage'
 import * as reservationsPagefunctions from '../pages/reservationsPage'
 
 // test suite
-describe (' Test suite', function() {
+describe (' Test suite 2', function() {
 
     beforeEach(()=>{
         cy.visit(targets.baseurl)
