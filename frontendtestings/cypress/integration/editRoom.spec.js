@@ -1,14 +1,22 @@
 /// <reference types="cypress" />
 
 // Test suite
+<<<<<<< HEAD
 describe('Edit room', function(){
+=======
+describe('Edit a room', function(){
+>>>>>>> commit
     
     // Test case
     it('Start the system', function (){
         // Går in på webbsidan
         cy.visit('http://localhost:3000')
     })
+<<<<<<< HEAD
     it('See if you are on the right website', function(){
+=======
+    it('See if you have come the right website', function(){
+>>>>>>> commit
         // Kolla om man har kommit rött
         cy.title().should('include', 'Tester')
         cy.contains('Login')
