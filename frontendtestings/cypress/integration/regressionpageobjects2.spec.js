@@ -1,0 +1,27 @@
+/// <reference types="cypress" />
+import * as indexfunctions from '../pages/indexPage'
+import * as dashBoardfunctions from  '../pages/dashboard'
+import * as targets from '../targets/targets'
+import * as billsPagefunctions from '../pages/billsPage'
+import * as reservationsPagefunctions from '../pages/reservationsPage'
+
+// test suite
+describe (' Test suite', function() {
+
+    beforeEach(()=>{
+        cy.visit(targets.baseurl)
+        indexfunctions.checkTitleOfIndexPage(cy)
+
+    })
+    // Test cases
+    it('create bill and delete it', function (){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
+        dashBoardfunctions.bills(cy, 'Bills')
+        billsPagefunctions.createBillandDelete(cy, 'Bills')
+    })
+    it('create reservation', function (){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
+        dashBoardfunctions.reservations(cy, 'Reservations')
+        reservationsPagefunctions.createaReservation(cy, 'Reservations')
+    })
+})

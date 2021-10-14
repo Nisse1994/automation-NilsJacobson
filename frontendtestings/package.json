@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "cypress:open": "cypress open",
-    "mochareport": "cypress run -- reporter mochawesome"
+    "mochareport": "cypress run -- reporter mochawesome",
+    "test:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +15,6 @@
     "cypress": "^7.1.0",
     "cypress-mochawesome-reporter": "^2.3.0",
     "mochawesome": "^6.2.2"
-  }
+  },
+  "dependencies": {}
 }
