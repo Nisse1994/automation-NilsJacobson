@@ -5,6 +5,8 @@ import * as dashBoardfunctions from  '../pages/dashboard'
 import * as targets from '../targets/targets'
 import * as roomsPagefunctions from '../pages/roomsPage'
 import * as clientsPagefunctions from '../pages/clientsPage'
+import * as billsPagefunctions from '../pages/billsPage'
+import * as reservationsPagefunctions from '../pages/reservationsPage'
 
 
 
@@ -29,14 +31,21 @@ describe (' Test suite', function() {
     })
     it('edit room', function(){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        dashBoardfunctions.rooms(cy, 'Rooms')
-        roomsPagefunctions.editrooms(cy, 'Rooms')
+         roomsPagefunctions.editrooms(cy, 'Rooms')
         
     })
     it('create client', function (){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        dashBoardfunctions.clients(cy, 'Clients')
         clientsPagefunctions.createClient(cy, 'Clients')
+    })
+    it('create bill and delete it', function (){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
+        billsPagefunctions.createBillandDelete(cy, 'Bills')
+    })
+    
+    it('create reservation', function (){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
+        reservationsPagefunctions.createaReservation(cy, 'Reservations')
     })
     
    

@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-const { bill } = require("../targets/targets")
+const { bill, bill2 } = require("../targets/targets")
 
 //elements
 
@@ -30,7 +30,18 @@ function createBillandDelete(cy, contentToConfirm){
     cy.get(deleting).click()
     cy.get(logout).click()
 }
+function createBill(cy, contentToConfirm){
+    cy.get(visitBills).click()
+    cy.contains(contentToConfirm)
+    cy.get(billsButton).click()
+    cy.get(typeBill).type(bill2)
+    cy.get(save).click()
+    cy.get(logout).click()
+}
+
 // exports
 module.exports = {
-createBillandDelete
+createBillandDelete,
+checkTitleOfBillsPage,
+createBill
 }

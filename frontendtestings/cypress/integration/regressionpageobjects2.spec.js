@@ -1,9 +1,10 @@
 /// <reference types="cypress" />
 import * as indexfunctions from '../pages/indexPage'
-import * as dashBoardfunctions from  '../pages/dashboard'
 import * as targets from '../targets/targets'
 import * as billsPagefunctions from '../pages/billsPage'
 import * as reservationsPagefunctions from '../pages/reservationsPage'
+import * as clientsPagefunctions from '../pages/clientsPage'
+import * as roomsPagefunctions from '../pages/roomsPage'
 
 // test suite
 describe (' Test suite 2', function() {
@@ -14,14 +15,25 @@ describe (' Test suite 2', function() {
 
     })
     // Test cases
-    it('create bill and delete it', function (){
+    it('edit client', function(){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        dashBoardfunctions.bills(cy, 'Bills')
-        billsPagefunctions.createBillandDelete(cy, 'Bills')
+        clientsPagefunctions.editClient(cy, 'Clients')
+    
     })
-    it('create reservation', function (){
+    it('create room', function(){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        dashBoardfunctions.reservations(cy, 'Reservations')
-        reservationsPagefunctions.createaReservation(cy, 'Reservations')
+        roomsPagefunctions.createaroom(cy, 'Rooms')
+    })
+    
+   
+  
+    it('create bill', function(){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview') 
+        billsPagefunctions.createBill(cy, 'Bills')
+
+    })
+    it('create reservation and delete', function(){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview') 
+        reservationsPagefunctions.createanddeletereservation(cy, 'Reservations')
     })
 })
