@@ -18,8 +18,9 @@ module.exports = {
     floornr: '4',
     priceofroom: '2100',
     roomfeaturing: 'Sea View',
-    startingdatetodelete: '2025-06-20',
-    endingdatetodelete: '2025-06-24'
+    datestartdelete: '2045-04-16',
+    dateenddelete: '2045-04-23'
+    
 
    
     

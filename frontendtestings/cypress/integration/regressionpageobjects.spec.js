@@ -29,6 +29,11 @@ describe (' Test suite', function() {
         dashBoardfunctions.logout(cy, 'Login')
         
     })
+    it('create reservation and delete', function(){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview') 
+        reservationsPagefunctions.createanddeletereservation(cy, 'Reservations')
+    })
+   
     it('edit room', function(){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
          roomsPagefunctions.editrooms(cy, 'Rooms')
@@ -43,11 +48,7 @@ describe (' Test suite', function() {
         billsPagefunctions.createBillandDelete(cy, 'Bills')
     })
     
-    it('create reservation', function (){
-        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        reservationsPagefunctions.createaReservation(cy, 'Reservations')
-    })
-    
+   
    
 })
 

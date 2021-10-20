@@ -32,8 +32,10 @@ describe (' Test suite 2', function() {
         billsPagefunctions.createBill(cy, 'Bills')
 
     })
-    it('create reservation and delete', function(){
-        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview') 
-        reservationsPagefunctions.createanddeletereservation(cy, 'Reservations')
+    it('create reservation', function (){
+        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
+        reservationsPagefunctions.createaReservation(cy, 'Reservations')
     })
+    
+    
 })
