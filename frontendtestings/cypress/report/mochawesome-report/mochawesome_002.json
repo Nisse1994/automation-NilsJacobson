@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-22T07:02:22.888Z",
-    "end": "2021-10-22T07:02:59.369Z",
-    "duration": 36481,
+    "start": "2021-10-22T22:03:30.510Z",
+    "end": "2021-10-22T22:03:56.249Z",
+    "duration": 25739,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "5fbb4359-1d11-47ee-b847-1ab0a6b40423",
+      "uuid": "272035f7-df07-4120-883e-0fd712dc46a6",
       "title": "",
       "fullFile": "cypress/integration/regressionpageobjects3.spec.js",
       "file": "cypress/integration/regressionpageobjects3.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "a2bd68f4-4ebb-4711-9f84-3fe34dce43ad",
+          "uuid": "7de9fb0c-7eaf-4aa5-81a2-968b2cc3b6fe",
           "title": " Test suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "create bill and delete it",
               "fullTitle": " Test suite create bill and delete it",
               "timedOut": null,
-              "duration": 11854,
+              "duration": 8705,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nbillsPagefunctions.createBillandDelete(cy, 'Bills');",
               "err": {},
-              "uuid": "39481716-d089-4d3b-a67e-3f03f514efd8",
-              "parentUUID": "a2bd68f4-4ebb-4711-9f84-3fe34dce43ad",
+              "uuid": "5e4127ea-9281-4bbe-8f73-61e3428087b1",
+              "parentUUID": "7de9fb0c-7eaf-4aa5-81a2-968b2cc3b6fe",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "create client and delete it",
               "fullTitle": " Test suite create client and delete it",
               "timedOut": null,
-              "duration": 8077,
+              "duration": 7965,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nclientsPagefunctions.createclientanddelete(cy, 'Clients');",
               "err": {},
-              "uuid": "42f2451e-c24a-4c6e-b64b-4ab8fc876f35",
-              "parentUUID": "a2bd68f4-4ebb-4711-9f84-3fe34dce43ad",
+              "uuid": "5324587e-ffbf-4fbc-8a2e-bc1c201aeb27",
+              "parentUUID": "7de9fb0c-7eaf-4aa5-81a2-968b2cc3b6fe",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "create reservation",
               "fullTitle": " Test suite create reservation",
               "timedOut": null,
-              "duration": 11332,
+              "duration": 5305,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nreservationsPagefunctions.createreservation(cy, 'Reservations');",
               "err": {},
-              "uuid": "b4ef725e-2a72-48ef-a71b-fa3fcdcf64b6",
-              "parentUUID": "a2bd68f4-4ebb-4711-9f84-3fe34dce43ad",
+              "uuid": "5496ca23-0dc9-4352-a3b3-6eef78493961",
+              "parentUUID": "7de9fb0c-7eaf-4aa5-81a2-968b2cc3b6fe",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "39481716-d089-4d3b-a67e-3f03f514efd8",
-            "42f2451e-c24a-4c6e-b64b-4ab8fc876f35",
-            "b4ef725e-2a72-48ef-a71b-fa3fcdcf64b6"
+            "5e4127ea-9281-4bbe-8f73-61e3428087b1",
+            "5324587e-ffbf-4fbc-8a2e-bc1c201aeb27",
+            "5496ca23-0dc9-4352-a3b3-6eef78493961"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 31263,
+          "duration": 21975,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
