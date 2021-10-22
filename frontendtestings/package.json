@@ -1,0 +1,22 @@
+{
+  "name": "frontendtestings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "mochareport": "cypress run -- reporter mochawesome",
+    "test:merge": "mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
+    "test:final": "marge cypress/report/output.json --reportDir cypress/report/ --inline",
+    "generate:merged": "rm cypress/report/ -Rf && npm run mochareport && npm run test:merge && npm run test:final"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^7.1.0",
+    "cypress-mochawesome-reporter": "^2.3.0",
+    "mochawesome": "^6.2.2"
+  },
+  "dependencies": {}
+}

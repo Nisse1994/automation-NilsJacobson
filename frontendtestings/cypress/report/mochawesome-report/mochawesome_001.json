@@ -1,0 +1,182 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-22T07:00:21.633Z",
+    "end": "2021-10-22T07:00:58.191Z",
+    "duration": 36558,
+    "testsRegistered": 5,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "09461a80-b3bc-491c-8df5-ed2ee48e781c",
+      "title": "",
+      "fullFile": "cypress/integration/regressionpageobjects2.spec.js",
+      "file": "cypress/integration/regressionpageobjects2.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "09dbc7f0-6e2d-4ef1-895f-05d5c2d1064c",
+          "title": " Test suite 2",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "edit client",
+              "fullTitle": " Test suite 2 edit client",
+              "timedOut": null,
+              "duration": 11352,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nclientsPagefunctions.editClient(cy, 'Clients');",
+              "err": {},
+              "uuid": "d5b6cc6c-2da5-4fac-947b-ffe09e212ddd",
+              "parentUUID": "09dbc7f0-6e2d-4ef1-895f-05d5c2d1064c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create room",
+              "fullTitle": " Test suite 2 create room",
+              "timedOut": null,
+              "duration": 8090,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nroomsPagefunctions.createaroom(cy, 'Rooms');",
+              "err": {},
+              "uuid": "14d883fc-bed6-41dc-a40f-aa2b7323c500",
+              "parentUUID": "09dbc7f0-6e2d-4ef1-895f-05d5c2d1064c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create bill",
+              "fullTitle": " Test suite 2 create bill",
+              "timedOut": null,
+              "duration": 4083,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nbillsPagefunctions.createBill(cy, 'Bills');",
+              "err": {},
+              "uuid": "682c43d4-5f41-4e2b-a297-4542a07a3ff0",
+              "parentUUID": "09dbc7f0-6e2d-4ef1-895f-05d5c2d1064c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create reservation to delete",
+              "fullTitle": " Test suite 2 create reservation to delete",
+              "timedOut": null,
+              "duration": 5062,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nreservationsPagefunctions.createaReservationtodelete(cy, 'Reservations');",
+              "err": {},
+              "uuid": "b4f18bae-5d9a-46fd-a96e-22eb2ab52269",
+              "parentUUID": "09dbc7f0-6e2d-4ef1-895f-05d5c2d1064c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "delete the reservation",
+              "fullTitle": " Test suite 2 delete the reservation",
+              "timedOut": null,
+              "duration": 4697,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nreservationsPagefunctions.deletereservation(cy, 'Reservations');",
+              "err": {},
+              "uuid": "f216ed6a-cb8c-4641-bb44-689aba1c788d",
+              "parentUUID": "09dbc7f0-6e2d-4ef1-895f-05d5c2d1064c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d5b6cc6c-2da5-4fac-947b-ffe09e212ddd",
+            "14d883fc-bed6-41dc-a40f-aa2b7323c500",
+            "682c43d4-5f41-4e2b-a297-4542a07a3ff0",
+            "b4f18bae-5d9a-46fd-a96e-22eb2ab52269",
+            "f216ed6a-cb8c-4641-bb44-689aba1c788d"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 33284,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

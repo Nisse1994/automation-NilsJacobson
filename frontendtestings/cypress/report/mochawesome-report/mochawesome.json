@@ -1,0 +1,144 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-10-22T06:58:16.823Z",
+    "end": "2021-10-22T06:58:52.772Z",
+    "duration": 35949,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a2cc8325-cd93-4c5f-a171-0e96ef037bf0",
+      "title": "",
+      "fullFile": "cypress/integration/regressionpageobjects.spec.js",
+      "file": "cypress/integration/regressionpageobjects.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "07fc3a46-697b-4988-9912-c3621a843ccc",
+          "title": " Test suite",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "login, visit pages and logut",
+              "fullTitle": " Test suite login, visit pages and logut",
+              "timedOut": null,
+              "duration": 15243,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\ndashBoardfunctions.rooms(cy, 'Rooms');\ndashBoardfunctions.clients(cy, 'Clients');\ndashBoardfunctions.bills(cy, 'Bills');\ndashBoardfunctions.reservations(cy, 'Reservations');\ndashBoardfunctions.logout(cy, 'Login');",
+              "err": {},
+              "uuid": "d2692470-f142-4f3a-96be-a650c2cf4825",
+              "parentUUID": "07fc3a46-697b-4988-9912-c3621a843ccc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "edit room",
+              "fullTitle": " Test suite edit room",
+              "timedOut": null,
+              "duration": 9233,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nroomsPagefunctions.editrooms(cy, 'Rooms');",
+              "err": {},
+              "uuid": "916a8304-35f1-49f5-8d36-61b76f48005b",
+              "parentUUID": "07fc3a46-697b-4988-9912-c3621a843ccc",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "create client",
+              "fullTitle": " Test suite create client",
+              "timedOut": null,
+              "duration": 8384,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nclientsPagefunctions.createClient(cy, 'Clients');",
+              "err": {},
+              "uuid": "eb0b5442-11c5-4854-9542-e787b21cd222",
+              "parentUUID": "07fc3a46-697b-4988-9912-c3621a843ccc",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d2692470-f142-4f3a-96be-a650c2cf4825",
+            "916a8304-35f1-49f5-8d36-61b76f48005b",
+            "eb0b5442-11c5-4854-9542-e787b21cd222"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 32860,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "charts": true,
+        "overwrite": false,
+        "html": false,
+        "json": true,
+        "reportDir": "cypress/report/mochawesome-report"
+      },
+      "version": "5.2.0"
+    }
+  }
+}
