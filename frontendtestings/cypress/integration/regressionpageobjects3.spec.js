@@ -1,9 +1,7 @@
 /// <reference types="cypress" />
 
 import * as indexfunctions from '../pages/indexPage'
-import * as dashBoardfunctions from  '../pages/dashboard'
 import * as targets from '../targets/targets'
-import * as roomsPagefunctions from '../pages/roomsPage'
 import * as clientsPagefunctions from '../pages/clientsPage'
 import * as billsPagefunctions from '../pages/billsPage'
 import * as reservationsPagefunctions from '../pages/reservationsPage'

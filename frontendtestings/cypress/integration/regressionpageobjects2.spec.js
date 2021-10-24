@@ -36,10 +36,7 @@ describe (' Test suite 2', function() {
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
         reservationsPagefunctions.createaReservationtodelete(cy, 'Reservations')
     })
-    it('delete the reservation', function (){
-        indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        reservationsPagefunctions.deletereservation(cy, 'Reservations')
-    })
+    
     
     
 })
