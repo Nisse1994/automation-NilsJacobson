@@ -29,7 +29,7 @@ describe (' Test suite', function() {
         
     })
    
-    it('edit room', function(){
+    it('edit a room', function(){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
          roomsPagefunctions.editrooms(cy, 'Rooms')
         
