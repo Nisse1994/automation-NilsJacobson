@@ -31,7 +31,7 @@ function editrooms(cy,  contentToConfirm){
     cy.get(edit).click()
     cy.get(editroomnumber).type(roomnumber)
     cy.get(save).click()
-    cy.get(logout).click()
+    
 
 }
 function createaroom(cy, contentToConfirm){
@@ -45,7 +45,7 @@ function createaroom(cy, contentToConfirm){
     cy.get(roomprice).type(priceofroom)
     cy.get(roomfeatures).select(roomfeaturing)
     cy.get(save).click()
-    cy.get(logout).click()
+    
 
 }
 

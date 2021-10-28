@@ -32,6 +32,7 @@ describe (' Test suite', function() {
     it('edit a room', function(){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
          roomsPagefunctions.editrooms(cy, 'Rooms')
+         dashBoardfunctions.logout(cy, 'Login')
         
     })
     
@@ -39,6 +40,7 @@ describe (' Test suite', function() {
     it('create client', function (){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
         clientsPagefunctions.createClient(cy, 'Clients')
+        dashBoardfunctions.logout(cy, 'Login')
     })
    
    

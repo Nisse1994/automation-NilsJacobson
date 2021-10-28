@@ -31,7 +31,7 @@ function createClient(cy, contentToConfirm){
     cy.get(typeEmail).type(email)
     cy.get(typeTelepohone).type(telephone)
     cy.get(save).click()
-    cy.get(logout).click()
+    
 
 }
 function createclientanddelete(cy,contentToConfirm){
@@ -44,7 +44,7 @@ function createclientanddelete(cy,contentToConfirm){
     cy.get(save).click()
     cy.get(clientoptions).click()
     cy.get(deleteclient).click()
-    cy.get(logout).click()
+    
 }
 function editClient(cy, contentToConfirm){
     cy.get(ClientsButton).click()
@@ -53,7 +53,7 @@ function editClient(cy, contentToConfirm){
     cy.get(edit).click()
     cy.get(editname).type(clientedit)
     cy.get(save).click()
-    cy.get(logout).click()
+   
 }
 // exports 
 module.exports = {

@@ -28,7 +28,7 @@ function createBillandDelete(cy, contentToConfirm){
     cy.get(save).click()
     cy.get(predelete).click()
     cy.get(deleting).click()
-    cy.get(logout).click()
+    
 }
 function createBill(cy, contentToConfirm){
     cy.get(visitBills).click()
@@ -36,7 +36,7 @@ function createBill(cy, contentToConfirm){
     cy.get(billsButton).click()
     cy.get(typeBill).type(bill2)
     cy.get(save).click()
-    cy.get(logout).click()
+    
 }
 
 // exports

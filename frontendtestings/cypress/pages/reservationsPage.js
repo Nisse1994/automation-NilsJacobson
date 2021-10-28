@@ -34,7 +34,7 @@ function createaReservationtodelete(cy, contentToConfirm){
     cy.get(save).click()
     cy.get(pre).click()
     cy.get(deleting).click()
-    cy.get(logout).click()
+    
 }
 
 
@@ -47,7 +47,7 @@ function createreservation(cy, contentToConfirm){
     cy.get(selectingperson).select(customer)
     cy.get(selectingroom).select(reservationroom)
     cy.get(save).click() 
-    cy.get(logout).click()
+    
     
     
     
