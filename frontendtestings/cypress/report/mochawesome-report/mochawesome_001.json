@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-10-28T12:54:16.516Z",
-    "end": "2021-10-28T12:54:54.721Z",
-    "duration": 38205,
+    "start": "2021-10-28T19:30:30.931Z",
+    "end": "2021-10-28T19:30:59.000Z",
+    "duration": 28069,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "ec6b5d7b-93a8-4c74-8a2c-e7c5ea6dd2bb",
+      "uuid": "c9dda3bd-7f51-4f81-b2a3-acd4a0968e34",
       "title": "",
       "fullFile": "cypress/integration/regressionpageobjects2.spec.js",
       "file": "cypress/integration/regressionpageobjects2.spec.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "d3fe09f2-22db-4d14-8e76-38a282a5c431",
+          "uuid": "bb787d26-68df-4df8-8b08-f2d284a9ab8a",
           "title": " Test suite 2",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "edit client",
               "fullTitle": " Test suite 2 edit client",
               "timedOut": null,
-              "duration": 11516,
+              "duration": 6503,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nclientsPagefunctions.editClient(cy, 'Clients');\ndashBoardfunctions.logout(cy, 'Login');",
               "err": {},
-              "uuid": "74a5c5f0-6023-4f69-8704-17cfb50236f8",
-              "parentUUID": "d3fe09f2-22db-4d14-8e76-38a282a5c431",
+              "uuid": "0affb802-9ebc-4c21-8cc2-e11ebb489c0b",
+              "parentUUID": "bb787d26-68df-4df8-8b08-f2d284a9ab8a",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "create room",
               "fullTitle": " Test suite 2 create room",
               "timedOut": null,
-              "duration": 8738,
+              "duration": 5576,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nroomsPagefunctions.createaroom(cy, 'Rooms');\ndashBoardfunctions.logout(cy, 'Login');",
               "err": {},
-              "uuid": "c907c6a6-6716-4478-ab41-cb12a68868f3",
-              "parentUUID": "d3fe09f2-22db-4d14-8e76-38a282a5c431",
+              "uuid": "beca48b1-2c1c-48da-8af0-076e8ea5d222",
+              "parentUUID": "bb787d26-68df-4df8-8b08-f2d284a9ab8a",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "create bill",
               "fullTitle": " Test suite 2 create bill",
               "timedOut": null,
-              "duration": 6155,
+              "duration": 4736,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nbillsPagefunctions.createBill(cy, 'Bills');\ndashBoardfunctions.logout(cy, 'Login');",
               "err": {},
-              "uuid": "5f8c369a-793d-404a-b055-022a5c8b2c43",
-              "parentUUID": "d3fe09f2-22db-4d14-8e76-38a282a5c431",
+              "uuid": "68014d82-0aa7-48cf-945f-256761457e1a",
+              "parentUUID": "bb787d26-68df-4df8-8b08-f2d284a9ab8a",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "create reservation to delete",
               "fullTitle": " Test suite 2 create reservation to delete",
               "timedOut": null,
-              "duration": 7843,
+              "duration": 6315,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -101,23 +101,23 @@
               "context": null,
               "code": "indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview');\nreservationsPagefunctions.createaReservationtodelete(cy, 'Reservations');\ndashBoardfunctions.logout(cy, 'Login');",
               "err": {},
-              "uuid": "67c6b363-2873-4f53-a5e9-a9ca35aa894a",
-              "parentUUID": "d3fe09f2-22db-4d14-8e76-38a282a5c431",
+              "uuid": "e45306e4-2dea-44c6-b24e-00689ec7a7a1",
+              "parentUUID": "bb787d26-68df-4df8-8b08-f2d284a9ab8a",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "74a5c5f0-6023-4f69-8704-17cfb50236f8",
-            "c907c6a6-6716-4478-ab41-cb12a68868f3",
-            "5f8c369a-793d-404a-b055-022a5c8b2c43",
-            "67c6b363-2873-4f53-a5e9-a9ca35aa894a"
+            "0affb802-9ebc-4c21-8cc2-e11ebb489c0b",
+            "beca48b1-2c1c-48da-8af0-076e8ea5d222",
+            "68014d82-0aa7-48cf-945f-256761457e1a",
+            "e45306e4-2dea-44c6-b24e-00689ec7a7a1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 34252,
+          "duration": 23130,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -147,7 +147,7 @@
         "useInlineDiffs": false,
         "code": true
       },
-      "version": "6.2.2"
+      "version": "6.3.1"
     },
     "marge": {
       "options": {
