@@ -26,6 +26,7 @@ function createBillandDelete(cy, contentToConfirm){
     cy.get(typeBill).type(bill)
     cy.get(check).click()
     cy.get(save).click()
+    cy.contains(contentToConfirm)
     cy.get(predelete).click()
     cy.get(deleting).click()
     
@@ -36,6 +37,7 @@ function createBill(cy, contentToConfirm){
     cy.get(billsButton).click()
     cy.get(typeBill).type(bill2)
     cy.get(save).click()
+    cy.contains(contentToConfirm)
     
 }
 

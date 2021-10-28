@@ -32,6 +32,7 @@ function createaReservationtodelete(cy, contentToConfirm){
     cy.get(selectingperson).select(customer)
     cy.get(selectingroom).select(reservationroom)
     cy.get(save).click()
+    cy.contains(contentToConfirm)
     cy.get(pre).click()
     cy.get(deleting).click()
     
@@ -47,6 +48,7 @@ function createreservation(cy, contentToConfirm){
     cy.get(selectingperson).select(customer)
     cy.get(selectingroom).select(reservationroom)
     cy.get(save).click() 
+    cy.contains(contentToConfirm)
     
     
     

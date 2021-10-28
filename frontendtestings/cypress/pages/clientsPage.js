@@ -31,6 +31,7 @@ function createClient(cy, contentToConfirm){
     cy.get(typeEmail).type(email)
     cy.get(typeTelepohone).type(telephone)
     cy.get(save).click()
+    cy.contains(contentToConfirm)
     
 
 }
@@ -44,6 +45,7 @@ function createclientanddelete(cy,contentToConfirm){
     cy.get(save).click()
     cy.get(clientoptions).click()
     cy.get(deleteclient).click()
+    cy.contains(contentToConfirm)
     
 }
 function editClient(cy, contentToConfirm){
@@ -53,6 +55,7 @@ function editClient(cy, contentToConfirm){
     cy.get(edit).click()
     cy.get(editname).type(clientedit)
     cy.get(save).click()
+    cy.contains(contentToConfirm)
    
 }
 // exports 
