@@ -23,7 +23,7 @@ const logout = '.user > .btn'
 function checkTitleOfBillsPage(cy){
     cy.title().should('eq', titleofDashboardPage)
 }
-function createaReservationtodelete(cy, contentToConfirm){
+function createaReservationanddeleteone(cy, contentToConfirm){
     cy.get(reservationbutton).click()
     cy.contains(contentToConfirm)
     cy.get(createReservation).click()
@@ -59,7 +59,7 @@ function createreservation(cy, contentToConfirm){
 // exports
 module.exports = {
     checkTitleOfBillsPage,
-    createaReservationtodelete,
+    createaReservationanddeleteone,
     createreservation
   
 

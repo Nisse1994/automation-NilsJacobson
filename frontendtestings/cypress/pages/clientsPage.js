@@ -35,7 +35,7 @@ function createClient(cy, contentToConfirm){
     
 
 }
-function createclientanddelete(cy,contentToConfirm){
+function createclientanddeleteone(cy,contentToConfirm){
     cy.get(ClientsButton).click()
     cy.contains(contentToConfirm)
     cy.get(createAclient).click()
@@ -62,7 +62,7 @@ function editClient(cy, contentToConfirm){
 module.exports = {
     checkTitleofClientsPage,
     createClient,
-    createclientanddelete,
+    createclientanddeleteone,
     editClient
 }
 

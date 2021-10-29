@@ -17,14 +17,14 @@ describe (' Test suite', function() {
         indexfunctions.checkTitleOfIndexPage(cy)
 
     })
-    it('create bill and delete it', function (){
+    it('create bill and delete one', function (){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        billsPagefunctions.createBillandDelete(cy, 'Bills')
+        billsPagefunctions.createBillandDeleteone(cy, 'Bills')
         dashBoardfunctions.logout(cy, 'Login')
     })
-    it('create client and delete it', function (){
+    it('create client and delete one', function (){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        clientsPagefunctions.createclientanddelete(cy, 'Clients')
+        clientsPagefunctions.createclientanddeleteone(cy, 'Clients')
         dashBoardfunctions.logout(cy, 'Login')
     })
     it('create reservation', function(){

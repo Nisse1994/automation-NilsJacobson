@@ -36,9 +36,9 @@ describe (' Test suite 2', function() {
         dashBoardfunctions.logout(cy, 'Login')
 
     })
-    it('create reservation to delete', function (){
+    it('create reservation and delete one', function (){
         indexfunctions.performValidLogin(cy, targets.username, targets.password, 'Tester Hotel Overview')
-        reservationsPagefunctions.createaReservationtodelete(cy, 'Reservations')
+        reservationsPagefunctions.createaReservationanddeleteone(cy, 'Reservations')
         dashBoardfunctions.logout(cy, 'Login')
     })
     

@@ -19,7 +19,7 @@ const logout = '.user > .btn'
 function checkTitleOfBillsPage(cy){
     cy.title().should('eq', titleofDashboardPage)
 }
-function createBillandDelete(cy, contentToConfirm){
+function createBillandDeleteone(cy, contentToConfirm){
     cy.get(visitBills).click()
     cy.contains(contentToConfirm)
     cy.get(billsButton).click()
@@ -43,7 +43,7 @@ function createBill(cy, contentToConfirm){
 
 // exports
 module.exports = {
-createBillandDelete,
+createBillandDeleteone,
 checkTitleOfBillsPage,
 createBill
 }
